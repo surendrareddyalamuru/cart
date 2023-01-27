@@ -15,6 +15,7 @@ pipeline {
      stage('style checks') {
        steps {
          echo 'Code Quality'
+         sh 'env'
        }
 
      }
