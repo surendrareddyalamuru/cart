@@ -12,7 +12,7 @@ pipeline {
      }
 
 
-     stage('style checks') {
+     stage('Style Checks') {
        steps {
          echo 'Code Quality'
        }
