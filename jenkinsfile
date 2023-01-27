@@ -29,6 +29,7 @@ pipeline {
 
 
      stage('Download Dependencies') {
+       when { tag "*" }
        steps {
          echo 'download dependencies'
        }
@@ -37,6 +38,7 @@ pipeline {
 
 
      stage('Prepare Artifacts') {
+       when { tag "*" }
        steps {
          echo 'prepare artifacts'
        }
@@ -45,6 +47,7 @@ pipeline {
 
 
      stage('Publish Artifacts') {
+       when { tag "*" }
        steps {
          echo 'publish artifacts'
        }
