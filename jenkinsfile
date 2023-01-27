@@ -4,7 +4,7 @@ pipeline {
 
    stages {
 
-     stage('code quality') {
+     stage('Code quality') {
        steps {
          echo 'Code Quality'
        }
