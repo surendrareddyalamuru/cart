@@ -1,0 +1,55 @@
+pipeline {
+
+   agent any
+
+   stages {
+
+     stage('code quality') {
+       steps {
+         echo 'Code Quality'
+       }
+
+     }
+
+
+     stage('style checks') {
+       steps {
+         echo 'Code Quality'
+       }
+
+     }
+
+
+     stage('unit tests') {
+       steps {
+         echo 'unit tests'
+       }
+
+     }
+
+
+     stage('Download Dependencies') {
+       steps {
+         echo 'download dependencies'
+       }
+
+     }
+
+
+     stage('Prepare Artifacts') {
+       steps {
+         echo 'prepare artifacts'
+       }
+
+     }
+
+
+     stage('Publish Artifacts') {
+       steps {
+         echo 'publish artifacts'
+       }
+
+     }
+
+   }
+}
